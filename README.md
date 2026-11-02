@@ -3,11 +3,12 @@
 
 ## Projektbeschreibung
 
+## Projektbeschreibung
+
 LedgerGuard ist ein selbst entwickelter Harness für den KI-Coding-Agenten **OpenCode**.
 
-Er unterstützt die Entwicklung unserer Finanz-Webanwendung **Ledgerly** durch projektspezifische Entwicklungsregeln und automatische Code-Verifikation.
+Er unterstützt die Entwicklung unserer Finanz-Webanwendung **Ledgerly** durch projektspezifische Entwicklungsregeln und das eigene Verifikationstool `ledger_verify`. Damit können Codeänderungen durch TypeScript-Prüfungen, automatisierte Tests und Builds überprüft werden.
 
-Das Projekt entsteht im Modul *AI in Software Development* (WS 2026/27).
 
 ## Technologie und Agent
 
