@@ -51,19 +51,12 @@ Die Gewichtungen wurden anhand unserer Projektanforderungen festgelegt.
 
 
 | Kriterium | Gewichtung | Begründung |
-
 |---|---:|---|
-
 | Qualität | 35 % | Korrekte Codeänderungen und zuverlässige Tool-Nutzung |
-
 | Kosten | 25 % | Begrenztes Projektbudget |
-
 | Latenz | 15 % | Schnelle Entwicklungs- und Verifikationszyklen |
-
 | Lizenz | 10 % | Rechtlich zulässige Nutzung |
-
 | Datenschutz | 15 % | Schutz von Quellcode und Finanzdaten |
-
 | **Gesamt** | **100 %** | |
 
 
@@ -73,23 +66,14 @@ Die Gewichtungen wurden anhand unserer Projektanforderungen festgelegt.
 
 
 | Messwert | Big Pickle | DeepSeek V4.1 Flash | GLM-5.3-Flash |
-
 |---|---|---|---|
-
 | Coding-Aufgabe | Erfolgreich | Erfolgreich | Erfolgreich |
-
 | Laufzeit | 34,4 s | 357 s | 37,5 s |
-
 | TypeScript | Bestanden | Bestanden | Bestanden |
-
 | Server-Finanztests | 14/14 | 14/14 | 14/14 |
-
 | Client-Geldtests | 9/9 | 9/9 | 9/9 |
-
 | Custom Tool | Regulär aufgerufen | Funktion direkt ausgeführt | Regulär aufgerufen |
-
 | Angezeigte Kosten | $0,00 | $0,00 | $0,00 |
-
 | Probleme | Keine gemeldet | Workspace-/Tool-Registrierungsprobleme | Keine gemeldet |
 
 
@@ -125,17 +109,11 @@ Die Laufzeiten beziehen sich auf den gesamten Agentenlauf einschließlich Codebe
 
 
 | Kriterium | Big Pickle | DeepSeek V4.1 Flash | GLM-5.3-Flash |
-
 |---|---|---|---|
-
 | Qualität | Aufgabe und reguläre Tool-Nutzung erfolgreich | Aufgabe erfolgreich, Tool-Integration problematisch | Aufgabe und reguläre Tool-Nutzung erfolgreich |
-
 | Kosten | Kostenloser Testzugang | Kostenloser Testzugang | Kostenloser Testzugang |
-
 | Latenz | 34,4 s | 357 s | 37,5 s |
-
 | Lizenz | Zugrunde liegendes Modell nicht offengelegt; OpenCode-Nutzungsbedingungen | Offene Modellgewichte; konkrete Lizenz der Modellversion separat zu prüfen | Konkrete Modelllizenz separat zu prüfen |
-
 | Datenschutz | Externe API; Daten können während der kostenlosen Phase zur Modellverbesserung verwendet werden | Externe API; OpenCode dokumentiert keine Nutzung zum Modelltraining und Zero-Retention für den Free-Endpunkt | Externe API; OpenCode dokumentiert keine Nutzung zum Modelltraining und Zero-Retention für den Free-Endpunkt |
 
 
@@ -165,20 +143,13 @@ Die Bewertung ist eine projektspezifische Einschätzung, kein allgemeines Modell
 
 
 | Kriterium | Gewicht | Big Pickle | DeepSeek | GLM |
-
 |---|---:|---:|---:|---:|
-
 | Qualität und Tool-Nutzung | 35 % | 5 | 3 | 5 |
-
 | Kosten | 25 % | 5 | 5 | 5 |
-
 | Latenz | 15 % | 5 | 1 | 5 |
-
 | Lizenztransparenz | 10 % | 2 | 3 | 3 |
-
 | Datenschutz | 15 % | 2 | 4 | 4 |
-
-| **Gewichteter Score** | **100 %** | **4,25/5** | **3,10/5** | **4,60/5** |
+| **Gewichteter Score** | **100 %** | **4,25/5** | **3,35/5** | **4,65/5** |
 
 
 
@@ -202,13 +173,13 @@ Gründe:
 
 
 
-1\. Big Pickle hat Ledgerly bereits erfolgreich entwickelt.
+1. Big Pickle hat Ledgerly bereits erfolgreich entwickelt.
 
-2\. Es hat unsere Coding-Aufgabe und den regulären Tool-Aufruf bestanden.
+2. Es hat unsere Coding-Aufgabe und den regulären Tool-Aufruf bestanden.
 
-3\. Mit 34,4 Sekunden war es in unserem Test knapp am schnellsten.
+3. Mit 34,4 Sekunden war es in unserem Test knapp am schnellsten.
 
-4\. Es war kostenlos verfügbar und bereits in unseren Entwicklungsprozess integriert.
+4. Es war kostenlos verfügbar und bereits in unseren Entwicklungsprozess integriert.
 
 
 
@@ -244,25 +215,25 @@ Unser Team hat zusätzlich einen OpenCode-Go-Key beim Professor angefordert. Nac
 
 
 
-1\. Hinderks, A. (2026): *The Model Landscape and How to Choose*, Hochschule Hannover, K2-Vorlesungsfolien. Insbesondere Kriteriengewichtung, Modell-/Infrastruktur-/Harness-Trennung und Benchmarkmethodik.
+1. Hinderks, A. (2026): *The Model Landscape and How to Choose*, Hochschule Hannover, K2-Vorlesungsfolien. Insbesondere Kriteriengewichtung, Modell-/Infrastruktur-/Harness-Trennung und Benchmarkmethodik.
 
-2\. Eigene OpenCode-Testläufe vom 02.11.2026: Big Pickle, DeepSeek V4.1 Flash und GLM-5.3-Flash.
+2. Eigene OpenCode-Testläufe vom 02.11.2026: Big Pickle, DeepSeek V4.1 Flash und GLM-5.3-Flash.
 
-3\. OpenCode Zen – Modelle, Kosten und Datenschutz:
+3. OpenCode Zen – Modelle, Kosten und Datenschutz:
 
-&#x20;  https://opencode.ai/zen
+   https://opencode.ai/zen
 
-4\. OpenCode – Modelle und kostenlose Zugänge:
+4. OpenCode – Modelle und kostenlose Zugänge:
 
-&#x20;  https://opencode.ai/docs/zen
+   https://opencode.ai/docs/zen
 
-5\. OpenCode Go – Datenschutzbedingungen:
+5. OpenCode Go – Datenschutzbedingungen:
 
-&#x20;  https://opencode.ai/docs/go
+   https://opencode.ai/docs/go
 
-6\. DeepSeek – Modellinformationen:
+6. DeepSeek – Modellinformationen:
 
-&#x20;  https://www.deepseek.com/
+   https://www.deepseek.com/
 
 
 
