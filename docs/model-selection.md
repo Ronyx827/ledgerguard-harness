@@ -1,22 +1,22 @@
-﻿
-
-\# Modellvergleich und Modellauswahl (K2)
 
 
-
-\## 1. Ziel
+# Modellvergleich und Modellauswahl (K2)
 
 
 
-Für unseren Coding-Agent-Harness \*\*LedgerGuard\*\* vergleichen wir drei KI-Modelle hinsichtlich Qualität, Kosten, Latenz, Lizenz und Datenschutz.
+## 1. Ziel
 
 
 
-Ziel ist die Auswahl eines geeigneten Modells für die Entwicklung und Verifikation unserer Finanz-Webanwendung \*\*Ledgerly\*\*.
+Für unseren Coding-Agent-Harness **LedgerGuard** vergleichen wir drei KI-Modelle hinsichtlich Qualität, Kosten, Latenz, Lizenz und Datenschutz.
 
 
 
-\## 2. Testumgebung
+Ziel ist die Auswahl eines geeigneten Modells für die Entwicklung und Verifikation unserer Finanz-Webanwendung **Ledgerly**.
+
+
+
+## 2. Testumgebung
 
 
 
@@ -24,17 +24,17 @@ Alle drei Modelle wurden mit derselben Coding-Aufgabe getestet:
 
 
 
-\- Coding-Agent: OpenCode 1.19.3, Build
+- Coding-Agent: OpenCode 1.19.3, Build
 
-\- Harness: LedgerGuard mit `AGENTS.md` und `ledger\_verify`
+- Harness: LedgerGuard mit `AGENTS.md` und `ledger_verify`
 
-\- Aufgabe: Einen Unit-Test für ein Monatsbudget von 10.000 Cent ohne Ausgaben ergänzen
+- Aufgabe: Einen Unit-Test für ein Monatsbudget von 10.000 Cent ohne Ausgaben ergänzen
 
-\- Ausgangspunkt: Getrennte Kopien derselben Ledgerly-Version
+- Ausgangspunkt: Getrennte Kopien derselben Ledgerly-Version
 
-\- Verifikation: TypeScript, Server-Finanztests und Client-Geldtests
+- Verifikation: TypeScript, Server-Finanztests und Client-Geldtests
 
-\- Modellkonfiguration: Standard/Default
+- Modellkonfiguration: Standard/Default
 
 
 
@@ -42,7 +42,7 @@ Die Modelle wurden über die kostenlosen OpenCode-Angebote verwendet. Der angefo
 
 
 
-\## 3. Kriterien und Gewichtung
+## 3. Kriterien und Gewichtung
 
 
 
@@ -64,11 +64,11 @@ Die Gewichtungen wurden anhand unserer Projektanforderungen festgelegt.
 
 | Datenschutz | 15 % | Schutz von Quellcode und Finanzdaten |
 
-| \*\*Gesamt\*\* | \*\*100 %\*\* | |
+| **Gesamt** | **100 %** | |
 
 
 
-\## 4. Praktischer Modellvergleich
+## 4. Praktischer Modellvergleich
 
 
 
@@ -102,17 +102,17 @@ Der Test überprüft:
 
 
 
-\- Status `ok`
+- Status `ok`
 
-\- Restbudget von 10.000 Cent
+- Restbudget von 10.000 Cent
 
-\- Verbrauch von 0 %
+- Verbrauch von 0 %
 
-\- Keine Budgetüberschreitung
+- Keine Budgetüberschreitung
 
 
 
-\*\*Besonderheit bei DeepSeek:\*\* Das Modell meldete Schwierigkeiten mit dem Arbeitsverzeichnis und der Registrierung des Custom Tools. Es führte die exportierte Verifikationsfunktion direkt aus. Die Prüfungen bestanden, aber der reguläre Tool-Aufruf wurde nicht nachgewiesen.
+**Besonderheit bei DeepSeek:** Das Modell meldete Schwierigkeiten mit dem Arbeitsverzeichnis und der Registrierung des Custom Tools. Es führte die exportierte Verifikationsfunktion direkt aus. Die Prüfungen bestanden, aber der reguläre Tool-Aufruf wurde nicht nachgewiesen.
 
 
 
@@ -120,7 +120,7 @@ Die Laufzeiten beziehen sich auf den gesamten Agentenlauf einschließlich Codebe
 
 
 
-\## 5. Vergleich der weiteren Kriterien
+## 5. Vergleich der weiteren Kriterien
 
 
 
@@ -144,7 +144,7 @@ Die kostenlose Verfügbarkeit kann zeitlich begrenzt sein. Lizenz und Datenschut
 
 
 
-\## 6. Gewichtete Bewertung
+## 6. Gewichtete Bewertung
 
 
 
@@ -152,11 +152,11 @@ Für die praktische Vorauswahl verwenden wir eine Skala von 1 bis 5:
 
 
 
-\- 1 = ungünstig
+- 1 = ungünstig
 
-\- 3 = mittel
+- 3 = mittel
 
-\- 5 = günstig
+- 5 = günstig
 
 
 
@@ -178,7 +178,7 @@ Die Bewertung ist eine projektspezifische Einschätzung, kein allgemeines Modell
 
 | Datenschutz | 15 % | 2 | 4 | 4 |
 
-| \*\*Gewichteter Score\*\* | \*\*100 %\*\* | \*\*4,25/5\*\* | \*\*3,10/5\*\* | \*\*4,60/5\*\* |
+| **Gewichteter Score** | **100 %** | **4,25/5** | **3,10/5** | **4,60/5** |
 
 
 
@@ -190,11 +190,11 @@ Die Punkte für Qualität und Latenz basieren auf einem einzigen Testlauf pro Mo
 
 
 
-\## 7. Modellauswahl
+## 7. Modellauswahl
 
 
 
-Für Milestone 1 verwenden wir weiterhin \*\*Big Pickle über OpenCode Zen\*\*.
+Für Milestone 1 verwenden wir weiterhin **Big Pickle über OpenCode Zen**.
 
 
 
@@ -212,15 +212,15 @@ Gründe:
 
 
 
-\*\*GLM-5.3-Flash ist jedoch eine sehr gute Alternative.\*\* Es löste dieselbe Aufgabe in 37,5 Sekunden und erreichte in unserer vorläufigen gewichteten Bewertung aufgrund der dokumentierten Datenschutzbedingungen sogar einen höheren Score.
+**GLM-5.3-Flash ist jedoch eine sehr gute Alternative.** Es löste dieselbe Aufgabe in 37,5 Sekunden und erreichte in unserer vorläufigen gewichteten Bewertung aufgrund der dokumentierten Datenschutzbedingungen sogar einen höheren Score.
 
 
 
-Deshalb ist Big Pickle unsere \*\*praktische M1-Auswahl aufgrund der bisherigen Projekterfahrung\*\*, nicht der eindeutige Gesamtsieger aller Kriterien.
+Deshalb ist Big Pickle unsere **praktische M1-Auswahl aufgrund der bisherigen Projekterfahrung**, nicht der eindeutige Gesamtsieger aller Kriterien.
 
 
 
-\## 8. Einschränkungen und Ausblick
+## 8. Einschränkungen und Ausblick
 
 
 
@@ -240,11 +240,11 @@ Unser Team hat zusätzlich einen OpenCode-Go-Key beim Professor angefordert. Nac
 
 
 
-\## 9. Quellen
+## 9. Quellen
 
 
 
-1\. Hinderks, A. (2026): \*The Model Landscape and How to Choose\*, Hochschule Hannover, K2-Vorlesungsfolien. Insbesondere Kriteriengewichtung, Modell-/Infrastruktur-/Harness-Trennung und Benchmarkmethodik.
+1\. Hinderks, A. (2026): *The Model Landscape and How to Choose*, Hochschule Hannover, K2-Vorlesungsfolien. Insbesondere Kriteriengewichtung, Modell-/Infrastruktur-/Harness-Trennung und Benchmarkmethodik.
 
 2\. Eigene OpenCode-Testläufe vom 02.11.2026: Big Pickle, DeepSeek V4.1 Flash und GLM-5.3-Flash.
 
@@ -266,7 +266,7 @@ Unser Team hat zusätzlich einen OpenCode-Go-Key beim Professor angefordert. Nac
 
 
 
-\*\*Stand: 02.11.2026\*\*
+**Stand: 02.11.2026**
 
 
 
