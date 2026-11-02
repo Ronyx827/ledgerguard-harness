@@ -1,22 +1,22 @@
-\# Target Software Specification
+﻿# Target Software Specification
 
-\## Ledgerly – Personal Expense \& Budget Tracker
-
-
-
-\*\*Project:\*\* AI in Software Development – WS 2026/27  
-
-\*\*Domain:\*\* Database-driven Web Applications  
-
-\*\*Target Software:\*\* Ledgerly  
-
-\*\*Coding Agent:\*\* OpenCode  
-
-\*\*Custom Harness:\*\* LedgerGuard
+## Ledgerly – Personal Expense \& Budget Tracker
 
 
 
-\### 1. Project Overview
+**Project:** AI in Software Development – WS 2026/27  
+
+**Domain:** Database-driven Web Applications  
+
+**Target Software:** Ledgerly  
+
+**Coding Agent:** OpenCode  
+
+**Custom Harness:** LedgerGuard
+
+
+
+### 1. Project Overview
 
 
 
@@ -32,7 +32,7 @@ The application serves as the target software for our custom OpenCode harness, L
 
 
 
-\### 2. Target Users
+### 2. Target Users
 
 
 
@@ -40,23 +40,23 @@ Individuals who want to:
 
 
 
-\- Track their income and expenses.
+- Track their income and expenses.
 
-\- Understand their monthly spending.
+- Understand their monthly spending.
 
-\- Organize transactions by category.
+- Organize transactions by category.
 
-\- Set and monitor spending budgets.
+- Set and monitor spending budgets.
 
-\- View financial summaries and trends.
-
-
-
-\### 3. Functional Requirements
+- View financial summaries and trends.
 
 
 
-\*\*FR1 – Transaction Management\*\*
+### 3. Functional Requirements
+
+
+
+**FR1 – Transaction Management**
 
 
 
@@ -64,7 +64,7 @@ Users must be able to create, view, edit, and delete income and expense transact
 
 
 
-\*\*FR2 – Category Management\*\*
+**FR2 – Category Management**
 
 
 
@@ -72,7 +72,7 @@ Transactions are organized into income and expense categories. Categories can be
 
 
 
-\*\*FR3 – Monthly Budget Management\*\*
+**FR3 – Monthly Budget Management**
 
 
 
@@ -80,7 +80,7 @@ Users can assign monthly spending limits to expense categories. The application 
 
 
 
-\*\*FR4 – Financial Dashboard\*\*
+**FR4 – Financial Dashboard**
 
 
 
@@ -88,7 +88,7 @@ The dashboard displays monthly income, expenses, remaining budget, savings rate,
 
 
 
-\*\*FR5 – Filtering and Navigation\*\*
+**FR5 – Filtering and Navigation**
 
 
 
@@ -96,7 +96,7 @@ Users can navigate between months and filter transactions by relevant criteria, 
 
 
 
-\*\*FR6 – Persistent Data Storage\*\*
+**FR6 – Persistent Data Storage**
 
 
 
@@ -104,7 +104,7 @@ Transactions, categories, and budgets must be stored in a database and remain av
 
 
 
-\### 4. Technology Stack
+### 4. Technology Stack
 
 
 
@@ -128,7 +128,7 @@ Transactions, categories, and budgets must be stored in a database and remain av
 
 
 
-\### 5. Database Structure
+### 5. Database Structure
 
 
 
@@ -136,11 +136,11 @@ The application uses three main database models:
 
 
 
-\- \*\*Category:\*\* Stores category information and distinguishes income and expense categories.
+- **Category:** Stores category information and distinguishes income and expense categories.
 
-\- \*\*Transaction:\*\* Stores transaction type, amount in cents, description, date, and associated category.
+- **Transaction:** Stores transaction type, amount in cents, description, date, and associated category.
 
-\- \*\*Budget:\*\* Stores monthly spending limits associated with expense categories.
+- **Budget:** Stores monthly spending limits associated with expense categories.
 
 
 
@@ -148,11 +148,11 @@ Each transaction belongs to a category. Budgets are associated with categories a
 
 
 
-\### 6. Financial Business Rules
+### 6. Financial Business Rules
 
 
 
-\*\*BR1 – Monetary Precision\*\*
+**BR1 – Monetary Precision**
 
 
 
@@ -160,7 +160,7 @@ Monetary amounts must be stored and calculated using integer cents to avoid floa
 
 
 
-\*\*BR2 – Transaction Validation\*\*
+**BR2 – Transaction Validation**
 
 
 
@@ -168,7 +168,7 @@ Transaction amounts must be valid, positive monetary values. Invalid input must 
 
 
 
-\*\*BR3 – Budget Calculation\*\*
+**BR3 – Budget Calculation**
 
 
 
@@ -180,7 +180,7 @@ Expenses reduce the available budget. Income is calculated separately.
 
 
 
-\*\*BR4 – Monthly Calculations\*\*
+**BR4 – Monthly Calculations**
 
 
 
@@ -188,7 +188,7 @@ Financial summaries must use transactions belonging to the selected month and ye
 
 
 
-\*\*BR5 – Overspending\*\*
+**BR5 – Overspending**
 
 
 
@@ -196,7 +196,7 @@ The application must identify when spending exceeds a configured budget.
 
 
 
-\*\*BR6 – Data Integrity\*\*
+**BR6 – Data Integrity**
 
 
 
@@ -204,29 +204,29 @@ Transactions and budgets must reference valid categories. Database relationships
 
 
 
-\### 7. Non-Functional Requirements
+### 7. Non-Functional Requirements
 
 
 
-\- Responsive and user-friendly interface.
+- Responsive and user-friendly interface.
 
-\- Reliable TypeScript type checking.
+- Reliable TypeScript type checking.
 
-\- Input validation and appropriate error handling.
+- Input validation and appropriate error handling.
 
-\- Persistent database storage.
+- Persistent database storage.
 
-\- Automated tests for financial calculations and important API functionality.
+- Automated tests for financial calculations and important API functionality.
 
-\- Maintainable frontend and backend architecture.
+- Maintainable frontend and backend architecture.
 
-\- Local execution on Windows.
+- Local execution on Windows.
 
-\- No external banking integration or payment processing required.
+- No external banking integration or payment processing required.
 
 
 
-\### 8. Quality Assurance
+### 8. Quality Assurance
 
 
 
@@ -234,39 +234,39 @@ The existing project provides automated verification through:
 
 
 
-\- `npm run typecheck`
+- `npm run typecheck`
 
-\- `npm run test`
+- `npm run test`
 
-\- `npm run build`
-
-
-
-The LedgerGuard harness extends OpenCode with a custom tool named `ledger\_verify`.
+- `npm run build`
 
 
 
-\*\*Quick mode:\*\*
+The LedgerGuard harness extends OpenCode with a custom tool named `ledger_verify`.
 
 
 
-\- TypeScript verification.
-
-\- Server-side financial tests.
-
-\- Client-side money calculation tests.
+**Quick mode:**
 
 
 
-\*\*Full mode:\*\*
+- TypeScript verification.
+
+- Server-side financial tests.
+
+- Client-side money calculation tests.
 
 
 
-\- TypeScript verification.
+**Full mode:**
 
-\- Complete automated test suite.
 
-\- Production build.
+
+- TypeScript verification.
+
+- Complete automated test suite.
+
+- Production build.
 
 
 
@@ -274,7 +274,7 @@ The tool returns structured results, including the status, duration, and output 
 
 
 
-\### 9. Development Scope
+### 9. Development Scope
 
 
 
@@ -286,7 +286,7 @@ Changes should follow the existing architecture, preserve financial correctness,
 
 
 
-For Milestone 1, the focus is demonstrating that OpenCode can complete a small coding task in Ledgerly and invoke the custom `ledger\_verify` tool.
+For Milestone 1, the focus is demonstrating that OpenCode can complete a small coding task in Ledgerly and invoke the custom `ledger_verify` tool.
 
 
 
@@ -294,7 +294,7 @@ Future milestones will extend LedgerGuard with additional domain-specific verifi
 
 
 
-\### 10. Acceptance Criteria
+### 10. Acceptance Criteria
 
 
 
@@ -302,17 +302,18 @@ A development task is considered successfully verified when:
 
 
 
-1\. The requested functionality is implemented.
+1. The requested functionality is implemented.
 
-2\. Relevant automated tests pass.
+2. Relevant automated tests pass.
 
-3\. TypeScript checks pass.
+3. TypeScript checks pass.
 
-4\. The custom `ledger\_verify` tool has been executed.
+4. The custom `ledger_verify` tool has been executed.
 
-5\. No unresolved verification failures are reported.
+5. No unresolved verification failures are reported.
 
 
 
 These criteria define the intended verification standard; the current Milestone 1 harness does not yet enforce every step automatically.
+
 
